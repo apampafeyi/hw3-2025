@@ -10,7 +10,7 @@ nav a:focus {
 
 
 /* Step 2a: Write selector/rule property to position the default position for the skip class element*/
-skip a:focus{
+.skip a:focus{
      top: 20px;
    }
 
@@ -84,6 +84,10 @@ first div in the grid  and place it in the grid. */
      place-self: center;
    }
 
+   .text-block:focus {
+     outline: 2px;;
+   }
+
 /* Add your media query here */
 @media screen and (min-width: 800px) {
 
@@ -95,7 +99,7 @@ first div in the grid  and place it in the grid. */
 
   /* Step 10: Write the selector/rule property to update the .container class */
 
-  .grid container{
+  .container{
      grid-template-columns: 50px auto 500px auto 50px;
    }
 
@@ -113,8 +117,7 @@ first div in the grid  and place it in the grid. */
 
  /* Step 13:Write the selector/rule property to update the .text-block class */
 
- .text-block{
-     max-height: 250px;
-     overflow: auto;
+ .text-block:focus {
+     outline: 2px solid black;
    }
  }
